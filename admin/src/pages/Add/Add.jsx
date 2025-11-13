@@ -34,7 +34,7 @@ const Add = ({url}) => {
     formData.append("category", data.category);
     formData.append("image", image);
 
-    const response = await axios.post(`${url}/api/food/add`, formData,{headers:{token}});
+    const response = await axios.post(`Ksh{url}/api/food/add`, formData,{headers:{token}});
     if (response.data.success) {
       setData({
         name: "",
@@ -121,7 +121,7 @@ const Add = ({url}) => {
               value={data.price}
               type="Number"
               name="price"
-              placeholder="$20"
+              placeholder="Ksh20"
               required
             />
           </div>
